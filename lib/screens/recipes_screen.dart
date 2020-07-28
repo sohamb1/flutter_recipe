@@ -80,7 +80,7 @@ class _RecipesScreenState extends State<RecipesScreen> {
                         Center(
                           child: InkWell(
                             onTap: () {
-                              Navigator.pushNamed(context, exampleRoute);
+                              Navigator.pushNamed(context, recipeDetailsRoute, arguments: recipes[_counter]);
                             },
                             child: Container(
                                 width: 50,
